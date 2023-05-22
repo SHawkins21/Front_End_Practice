@@ -27,18 +27,20 @@ const Home: NextPage = () => {
 
 
         <div>
-            {/* <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/> */}
+          <div>
+            <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/> 
+          </div>
             <div>
             <Tab   tablink="link" tabtitle="Home" text="Explination of me as a person maybe a short video"/>
             <Tab   tablink="link2" tabtitle="My Work" text="Resume possible a pdf download" />
             <Tab   tablink="Link3" tabtitle="Connect" text="What I would like here is a message form to send an email? "/> 
-          
             </div>
 
 
 
 
-            <Sidebar title="Sidebar" text="wee" phone={22323}/>
+            <Sidebar title="Welcome to my page!" text="wee" phone={123456789}
+                     connect="Connect" mywork="My Work" home="Home"/>
 
           {/* <Phone phone={123456}  call="Call Dad's Work"/>
           <Phone phone={518798}  call="Call Dad Home"/> */}
