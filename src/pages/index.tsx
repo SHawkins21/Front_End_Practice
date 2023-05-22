@@ -7,7 +7,7 @@ import Math from "~/component/math/Math";
 import { api } from "~/utils/api";
 import Phone from "~/component/phone/Phone";
 import Header from "~/component/header/header";
-
+import Tab from "~/component/simple/Tab";
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
@@ -27,7 +27,17 @@ const Home: NextPage = () => {
 
 
         <div>
-            <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/>
+            {/* <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/> */}
+            <div>
+            <Tab   tablink="link" tabtitle="Home" text="Explination of me as a person maybe a short video"/>
+            <Tab   tablink="link2" tabtitle="My Work" text="Resume possible a pdf download" />
+            <Tab   tablink="Link3" tabtitle="Connect" text="What I would like here is a message form to send an email? "/> 
+          
+            </div>
+
+
+
+
             <Sidebar title="Sidebar" text="wee" phone={22323}/>
 
           {/* <Phone phone={123456}  call="Call Dad's Work"/>
