@@ -33,7 +33,9 @@ const Home: NextPage = () => {
             <div>
             <Tab   tablink="link" tabtitle="Home" text="Explination of me as a person maybe a short video"/>
             <Tab   tablink="link2" tabtitle="My Work" text="Resume possible a pdf download" />
-            <Tab   tablink="Link3" tabtitle="Connect" text="What I would like here is a message form to send an email? "/> 
+            <Tab   tablink="Link3" tabtitle="Connect" text="What I would like here is a message form to send an email? ">
+              
+            </Tab> 
             </div>
 
 

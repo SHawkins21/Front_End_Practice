@@ -9,7 +9,7 @@ type HeaderProps = {
 
 const Header = ({tab1, tab2, tab3,}: HeaderProps) => {
   return (
-    <div className='fixed w-full top-0 left-96 bg-slate-200 text-black'>
+    <div className='fixed p-4 w-full top-0 left-96 rounded-b-xl bg-slate-200 text-black'>
     <div>{tab1}</div>
     <div>{tab2}</div>
     <div>{tab3}</div>

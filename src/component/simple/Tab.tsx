@@ -17,6 +17,7 @@ const Tab = ({tabtitle, tablink, text}: TabProps) => {
     <h1 className='text-2xl p-4'>{tabtitle}</h1>               
     <div className='flex p-4'>
     <div>{tablink}</div>
+   
     <div>{text}</div>     
     </div>
 
