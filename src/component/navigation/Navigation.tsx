@@ -8,7 +8,7 @@ const Navigation = ({text,url,slug}: Links) => {
   return (
     <div>
         
-        <Link href={`${url}`}>{text}</Link>
+        <Link href={`${url}`}>{text}<span>{slug}</span></Link>
         
     </div>
   )

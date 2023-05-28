@@ -3,9 +3,9 @@ import {type LinkIcon} from '~/types/types'
 
 
 
-const IconNav = ({text,url: Icon}: LinkIcon) => {
+const IconNav = ({text,url,Icon}: LinkIcon) => {
   return (
-    <div><Icon /></div>
+    <div><Icon className='h-6 w-6 text-orange-300' /></div>
   )
 }
 
