@@ -9,14 +9,21 @@ export const links:Links[] = [
     },
     {
       text:"Day 2", 
-      url:"/day-two",
+      url:"/day_2",
       slug:"day-two"
     },
     {
       text:"Day 3", 
-      url:"/day-three",
+      url:"/day_3",
       slug:"day-three"
-    }]
+    },
+    {
+      text:"My Work", 
+      url:"/my_work",
+      slug:"my-work"
+    }
+  
+  ]
 
 
 

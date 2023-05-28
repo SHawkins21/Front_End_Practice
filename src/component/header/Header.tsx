@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {linkIcons, links} from "~/constants/constants_link"
+import Navigation from '~/component/navigation/Navigation'
 type HeaderProps = {
 
     tab1:string
@@ -10,9 +11,13 @@ type HeaderProps = {
 const Header = ({tab1, tab2, tab3,}: HeaderProps) => {
   return (
     <div className='fixed p-4 w-full top-0 left-96 rounded-b-xl bg-slate-200 text-black'>
-    <div>{tab1}</div>
-    <div>{tab2}</div>
-    <div>{tab3}</div>
+      <div className='flex space-x-3  text-blue-500 '>
+        {
+            links?.map(({text,url,slug},index) => (
+                <Navigation key={index} text={text} url={url} slug={slug} />
+            ))
+        }
+      </div>
     </div>
   )
 }

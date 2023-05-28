@@ -3,6 +3,8 @@ import {type NextPage} from "next"
 import Button from '~/component/simple/Button'
 import Search from '~/component/complex/Search'
 import { useState } from "react"
+import Header from '~/component/header/Header'
+
 
 
 const Day_2:NextPage = () => {
@@ -35,11 +37,13 @@ const Day_2:NextPage = () => {
     }
 
   return (
+    <div> 
+    <Header/>
     <div className='bg-sky-300 h-screen flex justify-center
     items-center text-[2rem] '>
 
     <div className='flex gap-2'>
-     
+    
      
      <Search 
      generic={searchForm}
@@ -55,6 +59,7 @@ const Day_2:NextPage = () => {
     <div></div>
 
 
+    </div>
     </div>
   )
 }

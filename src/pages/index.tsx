@@ -1,4 +1,6 @@
 import { type NextPage } from "next";
+import {linkIcons, links} from "~/constants/constants_link"
+import Navigation from '~/component/navigation/Navigation'
 import Head from "next/head";
 import Link from "next/link";
 import Sidebar from "~/component/complex/Sidebar";
@@ -6,7 +8,7 @@ import Box from "~/component/simple/Box";
 import Math from "~/component/math/Math";
 import { api } from "~/utils/api";
 import Phone from "~/component/phone/Phone";
-import Header from "~/component/header/header";
+import Header from "~/component/header/Header";
 import Tab from "~/component/simple/Tab";
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -28,14 +30,12 @@ const Home: NextPage = () => {
 
         <div>
           <div>
-            <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/> 
+            
+            <Header tab1="My Work" tab2="My Resume" tab3="Connect with me"/>
+            
           </div>
             <div>
             <Tab   tablink="link" tabtitle="Home" text="Explination of me as a person maybe a short video"/>
-            <Tab   tablink="link2" tabtitle="My Work" text="Resume possible a pdf download" />
-            <Tab   tablink="Link3" tabtitle="Connect" text="What I would like here is a message form to send an email? ">
-              
-            </Tab> 
             </div>
 
 
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 
             <Sidebar title="Welcome to my page!" text="wee" phone={123456789}
                      connect="Connect" mywork="My Work" home="Home"/>
-
+            
           {/* <Phone phone={123456}  call="Call Dad's Work"/>
           <Phone phone={518798}  call="Call Dad Home"/> */}
  
