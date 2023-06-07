@@ -1,5 +1,6 @@
 import { type IconBaseProps, type IconType } from "react-icons"
 import {type ComponentType } from "react"
+import { type Variants } from "framer-motion"
 
 
 export type Links = {
@@ -15,4 +16,7 @@ export type LinkIcon = {
 
 
 }
-
+export type Box ={
+    text:string,
+    animation:Variants
+}

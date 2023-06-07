@@ -1,6 +1,6 @@
 import {type NextPage} from 'next'
 import React from 'react'
-import Boxanimation from '~/component/animations/box_animation'
+import Boxanimation from '~/component/animations/Box_animation'
 import {AiFillAlert} from "react-icons/ai";
 import {BiBath} from "react-icons/bi"
 import { motion as m } from 'framer-motion';
