@@ -3,7 +3,7 @@ import {type NextPage} from 'next'
 import { boxVarients, boxVarients1, boxVarients2 } from '~/variants/variants'
 import Boxs from '~/component/animations/Boxs'
 
-const Day_6 = () => {
+const Day_6:NextPage = () => {
   return (
 
 

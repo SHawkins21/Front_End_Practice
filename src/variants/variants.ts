@@ -11,17 +11,18 @@ export const boxVarients:Variants ={
         x:"0px"
     }
 }
-export const boxVarients1:Variants ={ 
+export const boxVarients1:Variants ={
+    
     hidden:{
-        x:"500Px"
+        y:"500Px"
     },
     visible:{
-        x:"0px"
+        y:"0px"
     }
 }
 export const boxVarients2:Variants ={ 
     hidden:{
-        y:"200Px"
+        y:"-500Px"
     },
     visible:{
         y:"0px"

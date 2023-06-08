@@ -17,6 +17,8 @@ export type LinkIcon = {
 
 }
 export type Box ={
-    text:string,
+    title:string,
+    
     animation:Variants
+    Icon:ComponentType<IconBaseProps>
 }
