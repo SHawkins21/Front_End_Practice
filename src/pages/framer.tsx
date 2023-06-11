@@ -2,6 +2,9 @@ import { type IconBaseProps, type IconType } from "react-icons"
 import {type NextPage} from 'next'
 import React from 'react'
 import Boxs from '~/component/animations/Boxs'
+import { AnimatePresence } from "framer-motion"
+import Menu_btn from "~/component/complex/Menu_btn"
+
 import { boxVarients, 
          boxVarients1, 
          boxVarients2,  } from '~/variants/variants';
@@ -25,7 +28,13 @@ const Framer = () => {
         <Boxs Icon={AiOutlinePhone}  title='Sales'  animation={boxVarients1}/>
         <Boxs Icon={AiOutlineSolution}  title='Bills'  animation={boxVarients2}/>
         
-    </div>
+    
+    
+
+
+
+</div>
+
   )
 }
 
