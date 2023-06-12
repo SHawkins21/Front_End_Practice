@@ -13,8 +13,8 @@ const Header = ({tab1, tab2, tab3,}: HeaderProps) => {
     <div className='fixed p-4 w-full top-0 left-96 rounded-b-xl bg-slate-200 text-black'>
       <div className='flex space-x-3  text-blue-500 '>
         {
-            links?.map(({text,url,slug},index) => (
-                <Navigation key={index} text={text} url={url} slug={slug} />
+            links?.map(({text,url,},index) => (
+                <Navigation key={index} text={text} url={url}  />
             ))
         }
       </div>

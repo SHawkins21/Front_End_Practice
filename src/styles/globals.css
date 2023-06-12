@@ -22,3 +22,22 @@
 .tbs_sidebar{
     @apply bg-gradient-to-b from-[#467af3] to-[#d9daee] p-4 rounded-lg 
 }
+.bg_main{
+    @apply bg-gradient-to-br from-[#F0FFFF] to-[#696969]
+}
+.side_bar_menu{
+    @apply bg-black 
+    shadow-slate-600 shadow-xl
+    border-green-400
+    border-r-4
+    text-white 
+    p-6 w-80 h-[100vh]
+}
+.trash_can{
+    @apply 
+    flex justify-center 
+    cursor-pointer 
+    p-2
+    text-4xl text-green-400 
+    border-2 border-green-300 rounded-lg
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import {type NextPage} from 'next'
 import {useState} from "react"
 import { motion as m, AnimatePresence} from "framer-motion"
-import Menu_btn from '~/component/complex/Menu_btn'
+import Menu_btn from '~/component/button/Menu_btn'
 
 
 

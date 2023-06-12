@@ -5,23 +5,53 @@ export const links:Links[] = [
     {
       text:"Home", 
       url:"/",
-      slug:"home-page"
+      
     },
     {
       text:"Day 2", 
       url:"/day_2",
-      slug:"day-two"
+     
     },
     {
       text:"Day 3", 
       url:"/day_3",
-      slug:"day-three"
+      
     },
     {
       text:"My Work", 
       url:"/my_work",
-      slug:"my-work"
-    }
+      
+    },
+    {
+      text:"Day 4", 
+      url:"/day_4",
+      
+    },
+    {
+      text:"Day 5", 
+      url:"/day_5",
+      
+    },
+    {
+      text:"Day 6", 
+      url:"/day_6",
+      
+    },
+    {
+      text:"Day 7", 
+      url:"/day_7",
+      
+    },
+    {
+      text:"Framer", 
+      url:"/framer",
+      
+    },
+    {
+      text:"Menues", 
+      url:"/menus",
+      
+    },
   
   ]
 

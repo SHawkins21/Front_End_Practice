@@ -6,7 +6,7 @@ import { type Variants } from "framer-motion"
 export type Links = {
     text:string, 
     url:string, 
-    slug:string
+    
 }
 
 export type LinkIcon = {
@@ -19,6 +19,11 @@ export type LinkIcon = {
 export type Box ={
     title:string,
     
+    animation:Variants
+    Icon:ComponentType<IconBaseProps>
+}
+export type NavButton ={ 
+    title:string, 
     animation:Variants
     Icon:ComponentType<IconBaseProps>
 }

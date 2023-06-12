@@ -4,11 +4,11 @@ import { type Links } from "~/types/types"
 
 
 
-const Navigation = ({text,url,slug}: Links) => {
+const Navigation = ({text,url}: Links) => {
   return (
     <div>
         
-        <Link href={`${url}`}>{text}<span>{slug}</span></Link>
+        <Link href={`${url}`}>{text}<span>{}</span></Link>
         
     </div>
   )
