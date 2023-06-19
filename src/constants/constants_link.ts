@@ -48,8 +48,8 @@ export const links:Links[] = [
       
     },
     {
-      text:"Menues", 
-      url:"/menus",
+      text:"login", 
+      url:"/login",
       
     },
   

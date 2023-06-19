@@ -1,5 +1,5 @@
 import { type IconBaseProps, type IconType } from "react-icons"
-import {type ComponentType } from "react"
+import {ReactNode, type ComponentType } from "react"
 import { type Variants } from "framer-motion"
 
 
@@ -23,7 +23,10 @@ export type Box ={
     Icon:ComponentType<IconBaseProps>
 }
 export type NavButton ={ 
-    title:string, 
+   
     animation:Variants
     Icon:ComponentType<IconBaseProps>
+
+    children:ReactNode
+    generic:() => void 
 }
