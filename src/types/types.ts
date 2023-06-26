@@ -9,6 +9,14 @@ export type Links = {
     
 }
 
+export type GridBoxProps = {
+    Icon:ComponentType<IconBaseProps>
+    Icon1:ComponentType<IconBaseProps>
+    title:string, 
+    number:string, 
+    
+}
+
 export type LinkIcon = {
     text:string, 
     url:string, 
@@ -29,4 +37,8 @@ export type NavButton ={
 
     children:ReactNode
     generic:() => void 
+}
+export type Icons = {
+  
+    Icon:ComponentType<IconBaseProps>
 }

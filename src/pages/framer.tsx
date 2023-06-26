@@ -53,7 +53,7 @@ const Framer:NextPage = () => {
             </AnimatePresence>
          </div>
 
-       <div className='flex justify-center items-center  space-x-4'>
+       <div className='flex justify-items-end space-x-4'>
           
         <Boxs Icon={AiOutlineHome}  title='Home'  animation={boxVarients1}/>
         <Boxs Icon={AiOutlineBank}  title='Money'  animation={boxVarients2}/>
