@@ -42,3 +42,8 @@ export type Icons = {
   
     Icon:ComponentType<IconBaseProps>
 }
+export type LinkedAccount={
+    title:string
+    accttype:string
+    Icon:ComponentType<IconBaseProps>
+}

@@ -5,7 +5,11 @@ import Icons from '~/component/simple/Icon'
 import {IoMdWifi} from "react-icons/io"
 import {FcSimCardChip as Chip} from "react-icons/fc"
 
+import LongBar from '~/component/complex/LongBar'
 import GridBox from '~/component/layouts/GridBox'
+import BarBox from '~/component/layouts/BarBox'
+import MobileMenu from '~/component/button/MobileMenu'
+
 
 const Layouts:NextPage = () => {
   return (
@@ -23,10 +27,10 @@ const Layouts:NextPage = () => {
           {/* Start Credit Card */}
           <div>
             <div className='  h-[220px] rounded-3xl 
-                           bg-slate-400'>
+                           bg-gradient-to-r from-third-color from-20% via-primary-color via-40% to-secondary-color to-60%'>
               <div className='flex justify-between items-center px-6 py-2
                             text-zinc-300'>
-                  <h1>Visa</h1>
+                  <h1 className='text-2xl'>Visa</h1>
                   <Icons Icon={IoMdWifi}/>
               </div>
               <div className='px-6 pt-6 '>
@@ -60,22 +64,30 @@ const Layouts:NextPage = () => {
         {/* Section Two Boxes "checking account Balance Forward " */}
         {/* https://dribbble.com/shots/20848600-debt-payoff-app */}
 
-        
-
-            
-             
-             
-             
            
 
             {/* Start Grid Square */}
             <Grid/>
             {/* End  Grid Square */}
-        
+            {/* Start Long Cross Bars */}
+            
+            <BarBox/>
+
+            {/* End Long Cross Bars  */}
+            {/* Start Bottom Menu */}
+
+            <div className=''>
+
+            <MobileMenu/>
+
+              
+            </div>
+
+            {/* End Bottom Menu*/}
 
 
 
-           
+          
 
 
      
