@@ -7,7 +7,7 @@ const LongBar = ({title,accttype,Icon}:LinkedAccount) => {
     <div>
           <div className = ' gap-5'>
               
-              <div className ='flex outline-none bg-secondary-color text-zinc-200 p-3 rounded-2xl grid-rows-3 grid-flow-col gap-0 '>
+              <div className ='flex outline-none bg-primary-color text-zinc-200 p-3 rounded-2xl grid-rows-3 grid-flow-col gap-0 '>
                <div className = 'flex justify-center py-6 bg-third-color w-20 h-20 rounded-2xl '>
                <Icon className='text-2xl'/>
                </div>
@@ -17,7 +17,6 @@ const LongBar = ({title,accttype,Icon}:LinkedAccount) => {
                </div>
                
            </div>  
-
 
 
     </div>

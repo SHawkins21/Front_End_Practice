@@ -9,12 +9,14 @@ import LongBar from '~/component/complex/LongBar'
 import GridBox from '~/component/layouts/GridBox'
 import BarBox from '~/component/layouts/BarBox'
 import MobileMenu from '~/component/button/MobileMenu'
+import Transaction from '~/component/navigation/Transaction'
+import TransBox from '~/component/layouts/TransBox'
 
 
 const Layouts:NextPage = () => {
   return (
     <main className='min-h-screen p-4 flex justify-center
-                   bg-slate-900 '>
+                   bg-background-color '>
         {/* Start Wallet/ Pocket that the Card rests in */}
         <div className='w-[400px]'>
         <div className='h-80 mb-2 rounded-3xl px-8 max-w-[500px]
@@ -72,6 +74,8 @@ const Layouts:NextPage = () => {
             {/* Start Long Cross Bars */}
             
             <BarBox/>
+            <div className = 'text-2xl p-2 text-zinc-200 col-span-1'>Transactions</div>
+            <TransBox/>
 
             {/* End Long Cross Bars  */}
             {/* Start Bottom Menu */}
@@ -79,6 +83,7 @@ const Layouts:NextPage = () => {
             <div className=''>
 
             <MobileMenu/>
+          
 
               
             </div>

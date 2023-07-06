@@ -13,7 +13,7 @@ export type GridBoxProps = {
     Icon:ComponentType<IconBaseProps>
     Icon1:ComponentType<IconBaseProps>
     title:string, 
-    number:string, 
+    number:number | undefined
     
 }
 
@@ -46,4 +46,9 @@ export type LinkedAccount={
     title:string
     accttype:string
     Icon:ComponentType<IconBaseProps>
+}
+export type TransactionProps = {
+    name:string
+    amount:number, 
+    type:boolean, 
 }

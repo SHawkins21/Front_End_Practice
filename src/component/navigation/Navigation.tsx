@@ -4,6 +4,7 @@ import { type Links } from "~/types/types"
 
 
 
+
 const Navigation = ({text,url}: Links) => {
   return (
     <div>

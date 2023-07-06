@@ -16,3 +16,23 @@ model Example {
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 }
+
+model Transactions {
+    id        String   @id @default(cuid())
+   
+    name String 
+    amount Float 
+    type Boolean 
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+model Banks {
+    id        String   @id @default(cuid())
+   
+    name String 
+    
+    
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
