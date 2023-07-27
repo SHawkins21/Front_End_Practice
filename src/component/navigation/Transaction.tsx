@@ -5,7 +5,18 @@ import {IoIosArrowForward} from "react-icons/io"
 
 
 const Transaction = ({name, amount, type}: TransactionProps) => {
+  
+ 
+  const f = Intl.NumberFormat("en-us",{
+    currency:"USD",
+    style:"currency"
+  })
+
+  
+  
   return (
+
+
     
     <div className='flex justify-between bg-third-color rounded-2xl p-[5px] mt-1 text-zinc-300 '>
 
@@ -14,7 +25,7 @@ const Transaction = ({name, amount, type}: TransactionProps) => {
          </div> 
             <div className='flex pl-6 justify-center items-center'>
              <div className={type ? 'text-green-300':'text-red-300' }>
-             {type ? '+':'-'} {amount} 
+             {type ? '+':'-'} {f.format(parseFloat(amount))} 
              </div>
             </div>
 

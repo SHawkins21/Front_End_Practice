@@ -12,8 +12,19 @@ const Grid = () => {
 
 
   const {data:total} = api.trans.totalAgg.useQuery(undefined)
+
+
+  const f = Intl.NumberFormat("en-us",{
+    currency:"USD",
+    style:"currency"
+  })
+
+  // const {} = total?._sum
+
   const sum = total?._sum.amount?.toFixed(2)
   const avg = total?._avg.amount?.toFixed(2)
+
+  // console.log(f.format(parseFloat(sum))); 
   
 
   return (

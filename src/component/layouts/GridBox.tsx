@@ -7,9 +7,6 @@ import Transaction from '../navigation/Transaction'
 
 const GridBox = ({Icon,Icon1,title,number}:GridBoxProps) => {
 
-let fnum:number = parseFloat(number)
-
-
   return (
     <div>
         

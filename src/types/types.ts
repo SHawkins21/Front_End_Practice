@@ -13,7 +13,7 @@ export type GridBoxProps = {
     Icon:ComponentType<IconBaseProps>
     Icon1:ComponentType<IconBaseProps>
     title:string, 
-    number:number | undefined
+    number:string | undefined
     
 }
 
@@ -49,6 +49,10 @@ export type LinkedAccount={
 }
 export type TransactionProps = {
     name:string
-    amount:number, 
+    amount:string, 
     type:boolean, 
 }
+
+export type ModalProps = {
+    children:ReactNode
+    }

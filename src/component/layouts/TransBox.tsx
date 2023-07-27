@@ -10,7 +10,7 @@ const TransBox = () => {
     <div>
         {
                 trans?.map(({id,amount,name,type}) => (
-                    <Transaction key={id} amount={amount} name={name} type={type}/>
+                    <Transaction key={id} amount={amount.toString()} name={name} type={type}/>
                 ))
 
 

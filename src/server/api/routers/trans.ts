@@ -3,7 +3,7 @@ import { z } from "zod";
 import { 
     createTRPCRouter, 
     publicProcedure 
-} from "~/server/api/trpc"
+} from "~/server/api/trpc";
 
 export const transSchema = z.object(
     {
@@ -31,7 +31,8 @@ export const TransactionRouter = createTRPCRouter(
       totalAgg:
       publicProcedure
       .query(async({ctx:{prisma}}) => {
-        return await prisma.transactions.aggregate({
+
+        const render = await prisma.transactions.aggregate({
             _sum:{
                 amount:true
             },
@@ -42,11 +43,19 @@ export const TransactionRouter = createTRPCRouter(
                 amount:true
             }
         })
+        const f = Intl.NumberFormat("en-us",{ 
+            currency:"USD", 
+            style:"currency"
+        })
+        const obj = {
+            sum:f.format(render?._sum.amount as number),
+            count:render?._count.id,
+            avg:f.format(render?._avg.amount as number)
+        }
+        console.log(obj);
+
+        return obj
+
       })
-
-
-      }
-
-
-
+   }
 )
