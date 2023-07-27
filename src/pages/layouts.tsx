@@ -11,6 +11,7 @@ import BarBox from '~/component/layouts/BarBox'
 import MobileMenu from '~/component/button/MobileMenu'
 import Transaction from '~/component/navigation/Transaction'
 import TransBox from '~/component/layouts/TransBox'
+import ModalProps from '~/component/modal/Transaction_modal'
 
 
 const Layouts:NextPage = () => {
@@ -74,8 +75,18 @@ const Layouts:NextPage = () => {
             {/* Start Long Cross Bars */}
             
             <BarBox/>
-            <div className = 'text-2xl p-2 text-zinc-200 col-span-1'>Transactions</div>
+
+            <div className = 'text-2xl p-2 text-zinc-200 col-span-1'>Transactions
+            </div>
+            <ModalProps>
+            
+            </ModalProps>
+            
+
             <TransBox/>
+            {/* Modal Start */}
+            
+            {/* Modal End */}
 
             {/* End Long Cross Bars  */}
             {/* Start Bottom Menu */}
