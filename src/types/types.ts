@@ -56,3 +56,16 @@ export type TransactionProps = {
 export type ModalProps = {
     children:ReactNode
     }
+
+export type Alerts = {
+    text:string,
+    icon:IconBaseProps, 
+}
+
+export type Modal = {
+    close:() => void
+    children:ReactNode
+}
+export type BtnGeneric ={ 
+    generic:() => void 
+}

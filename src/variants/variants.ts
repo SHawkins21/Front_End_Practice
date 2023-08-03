@@ -1,6 +1,23 @@
 
 
 import { type Variants } from "framer-motion";
+import { exit } from "process";
+
+export const alertModal:Variants ={ 
+    hidden:{
+        opacity:0,
+        right:"-10" 
+        
+    }, 
+    visible:{
+        opacity:1, 
+        x:"-500px"
+    }
+    
+}
+
+
+
 
 // don't use duration with spring  
 export const boxVarients:Variants ={ 
