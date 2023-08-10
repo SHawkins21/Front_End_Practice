@@ -5,6 +5,7 @@ import { motion as m, AnimatePresence } from 'framer-motion'
 import Navbtn from '../button/Nav_btn'
 import Icons from '../simple/Icon'
 import { AiOutlinePlus} from "react-icons/ai";
+import ModalForm from './ModalForm'
 
 
 const ModalProps = ({children}: ModalProps) => {
@@ -15,28 +16,7 @@ return (
     <div className=' p-5 rounded-xl  bg-primary-color '>
         <AnimatePresence>
         {menu && 
-
-                    <m.div 
-                    initial={{
-                        opacity:0,
-                        width:0
-                     }}
-                     animate={{
-                        opacity:1,
-                        width:'50vw'
-                     }}
-                     exit={{
-                        opacity:0,
-                        width:0
-                     }}
-                     className='flex justify-items-center bg-green-400 w-full h-10 p-5 rounded-xl'
-                     
-                     >
-                     Modal Form 
-                    </m.div>  
-
-            
-        
+            <ModalForm></ModalForm>
         }
 
 
@@ -44,7 +24,7 @@ return (
       
         
         </AnimatePresence>
-        <div className='text-slate-50 flex  justify-between'>Add Transaction
+        <div className='text-slate-50 flex  justify-between p-4'>Add Transaction
         <button className='bg-secondary-color rounded-full' onClick={()=> setMenu(!menu)}>
         <Icons Icon={AiOutlinePlus}/>
         </button>

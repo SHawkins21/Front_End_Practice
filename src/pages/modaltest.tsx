@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const Modaltest = (props: Props) => {
+const Modaltest = () => {
   return (
     <div>modaltest</div>
   )

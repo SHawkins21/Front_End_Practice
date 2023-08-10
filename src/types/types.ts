@@ -54,6 +54,7 @@ export type TransactionProps = {
 }
 
 export type ModalProps = {
+   
     children:ReactNode
     }
 
@@ -63,6 +64,7 @@ export type Alerts = {
 }
 
 export type Modal = {
+    key:string
     close:() => void
     children:ReactNode
 }

@@ -1,19 +1,28 @@
 
 
-import { type Variants } from "framer-motion";
+import { animate, type Variants } from "framer-motion";
 import { exit } from "process";
 
 export const alertModal:Variants ={ 
-    hidden:{
-        opacity:0,
-        right:"-10" 
-        
+   initial:{
+    opacity:0, 
+    right:0
+   },
+   animate:{ 
+    opacity:1,
+    right:20,
+    scale:1,
+   
+    transition:{
+        duration:0.3,
+        ease:"easeOut"
     }, 
-    visible:{
-        opacity:1, 
-        x:"-500px"
+   }, 
+    exit:{
+        opacity:0, 
+        right:0, 
+        transition:{duration:0.2, ease:"easeOut"}
     }
-    
 }
 
 
